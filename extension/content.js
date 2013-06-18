@@ -4,7 +4,7 @@ String.prototype.toProperCase = function () {
 
 function getRunTime() {
     var regExp = new RegExp('Run Time', 'i');
-    var table = $('div.info.segment');
+    var table = $('div.span5.info');
     var found = 0;
     var runTime;
 
@@ -60,12 +60,11 @@ function getCalendarLink(film, date, showtime, location) {
 
     var calendarLink ='<a href="http://www.google.com/calendar/event';
     calendarLink += '?action=TEMPLATE';
-    calendarLink += '&text=' + film + ' @ ' + location;
+    calendarLink += '&text=' + film + ' @ Alamo - ' + location;
     calendarLink += '&dates=' + startTime + '/' + endTime; //20120820T130000Z/20120820T133000Z'
     calendarLink += '&details= ' + window.location;
-    calendarLink += '&location=' + location + '"';
+    calendarLink += '&location=Alamo Drafthouse - ' + location + '"';
     calendarLink += ' target="_blank">*</a>';
-
     return calendarLink;
 }
 
